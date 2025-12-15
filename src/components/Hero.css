@@ -1,0 +1,172 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000000;
+}
+
+.hero-label {
+  position: absolute;
+  z-index: 2;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero-label-top-left {
+  top: 40px;
+  left: 40px;
+}
+
+.hero-label-bottom-right {
+  bottom: 40px;
+  right: 40px;
+}
+
+.hero-svg-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-sparkle {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1); /* SVG를 하얀색으로 */
+  opacity: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #333;
+  opacity: 0;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  color: #333;
+}
+
+.title-line {
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+  font-weight: 300;
+  color: #555;
+}
+
+.hero-button {
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.hero-button:hover {
+  background: #333333;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  .hero-svg-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-label {
+    font-size: 0.65rem;
+  }
+
+  .hero-label-top-left {
+    top: 30px;
+    left: 30px;
+  }
+
+  .hero-label-bottom-right {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-svg-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .hero-label-top-left {
+    top: 20px;
+    left: 20px;
+  }
+
+  .hero-label-bottom-right {
+    bottom: 20px;
+    right: 20px;
+  }
+}

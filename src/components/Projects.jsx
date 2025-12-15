@@ -160,13 +160,13 @@ function Projects() {
     <section ref={sectionRef} className="projects-section">
       {/* 패럴랙스 아이콘들 */}
       <div ref={icon1Ref} className="parallax-icon parallax-icon-1">
-        <img src="/icon01.png" alt="Icon 1" className="parallax-icon-img" />
+        <img src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/icon01.png`} alt="Icon 1" className="parallax-icon-img" />
       </div>
       <div ref={icon2Ref} className="parallax-icon parallax-icon-2">
-        <img src="/icon02.png" alt="Icon 2" className="parallax-icon-img" />
+        <img src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/icon02.png`} alt="Icon 2" className="parallax-icon-img" />
       </div>
       <div ref={icon3Ref} className="parallax-icon parallax-icon-3">
-        <img src="/icon03.png" alt="Icon 3" className="parallax-icon-img" />
+        <img src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/icon03.png`} alt="Icon 3" className="parallax-icon-img" />
       </div>
       
       <div className="container">

@@ -250,7 +250,7 @@ function Hero() {
         Frontend Developer
       </div>
       <div ref={svgRef} className="hero-svg-container">
-        <img src="/shape.svg" alt="sparkle" className="hero-sparkle" />
+        <img src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/shape.svg`} alt="sparkle" className="hero-sparkle" />
       </div>
       <div ref={contentRef} className="hero-content">
         <h1 ref={titleRef} className="hero-title">

@@ -106,7 +106,7 @@ function About() {
           </div>
           <div ref={imageRef} className="about-image">
             <div className="image-placeholder">
-              <img src="/profile.png" alt="Choi Daye" className="profile-image" />
+              <img src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/profile.png`} alt="Choi Daye" className="profile-image" />
             </div>
           </div>
         </div>
